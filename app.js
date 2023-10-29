@@ -5,7 +5,7 @@ const BookRoutes = require("./api/books/router");
 const app = express();
 app.use(express.json());
 app.use("/api", BookRoutes);
-connectDB;
+connectDB();
 
 app.listen(8000, () => {
   try {
